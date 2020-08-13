@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fully Validated Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+  <h2>Contact Form</h2>
+  <form action="insert.php" id="myform" onsubmit = "return validate();" method="POST">
+    <div class="input_field">
+        <input type="text" placeholder="Name" id="name" name="name">
+        <span id="name_error" class="error"></span>
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Email" id="email" name="email">
+        <span id="email_error" class="error"></span>
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Mobile" id="mobile" name="mobile">
+        <span id="mob_error" class="error"></span>
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="DOB" id="dob" name="dob">
+        <span id="dob_error" class="error"></span>
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="PIN" id="pin" name="pin">
+        <span id="pin_error" class="error"></span>
+    </div>
+    <div class="btn">
+        <input type="submit">
+    </div>
+  </form>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
